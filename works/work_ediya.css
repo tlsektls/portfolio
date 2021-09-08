@@ -1,0 +1,348 @@
+@charset "utf-8";
+main {
+  overflow: hidden;
+}
+/* header title */
+#box_title{
+  font-size: 160px;
+  letter-spacing: -6px;
+  position: relative;
+  z-index: 10;
+  bottom: -130px;
+  left: calc(50% - 430px);
+  color: #0d50a0;
+  display: block;
+  width: 860px;
+  margin: 0; padding: 0;
+}
+#box_title span {
+	position: relative;
+}
+/*** main img ***/
+img.mainImg {
+  position: absolute;
+  left: calc(50% - 350px);
+  top: 260px;
+  width: 700px;
+  z-index: 20;
+  opacity: 0;
+  box-shadow:
+  0 0.8px 27.7px -43px rgba(0, 0, 0, 0.23),
+  0 2.4px 45px -43px rgba(0, 0, 0, 0.281),
+  0 4.1px 60.2px -43px rgba(0, 0, 0, 0.35),
+  0 6px 80px -43px rgba(0, 0, 0, 0.54);
+  animation: main 0.5s ;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards
+}
+@keyframes main {
+	0% {
+    opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/************ main 시작 && intro *************/
+.intro {
+  text-align: left;
+  /* height: 400px; */
+}
+.intro_box {
+  float: right;
+  width: 20vw;
+}
+.intro p {
+  width: 100%;
+  margin: 4px;
+}
+.intro p:nth-child(odd) {
+  font-weight: bold;
+  margin-top: 50px;
+}
+.intro img {
+  padding-top: 40px;
+}
+
+/* 전체 타이틀에 적용 */
+.chap {
+  position: relative;
+}
+.title {
+  font-size: 350px;
+  font-weight: normal;
+  letter-spacing: -20px;
+  position: absolute;
+  top: 0px;
+  left: -206px;
+  display: block;
+}
+.title span{
+	 position: relative;
+}
+
+/* 타이틀 다음 컨텐츠들 */
+ul.content {
+  padding-top: 450px;
+  /* width: 64vw; */
+  color: #cfd9e2;
+}
+ul.content h2 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: left;
+  margin: 24px 0 24px;
+  width: 100%;
+  opacity: 0.8;
+}
+ul.content h3 {
+  font-size: 24px;
+  text-align: left;
+  margin: 24px 0 24px;
+  width: 100%;
+  font-family: 'Gothic A1', sans-serif;
+}
+ul.content ul {
+  font-size: 22px;
+  font-family: 'Gothic A1', sans-serif;
+}
+ul.content > li {
+  font-weight: 300;
+  margin-bottom: 150px;
+  line-height: 38px;
+}
+/* pub 첫째 */
+ul.pub.content {
+  width: 90%;
+  margin-left: auto;
+}
+ul.pub.content li:first-of-type > ul {
+  display: flex;
+}
+ul.pub.content li:first-of-type > ul > li {
+  width: 24%;
+  line-height: 30px;
+}
+ul.pub.content ul > li span {
+  font-weight: 500;
+}
+/* pub 둘째 & 셋째 */
+ul.pub.content > li:nth-of-type(2) {
+  display: flex;
+  width: 90%;
+}
+ul.pub.content > li:nth-of-type(2) .wrap {
+  width: 46%;
+  font-size: 18px;
+}
+ul.pub.content > li:nth-of-type(2) .wrap li {
+  margin: 10px 0;
+  line-height: 26px;
+  min-height: 98px;
+  max-height: 180px;
+}
+ul.pub.content > li:nth-of-type(2) .wrap li:first-child {
+  min-height: 104px;
+  max-height: 180px;
+  margin: 20px 0;
+}
+
+ul.pub.content > li:nth-of-type(2) .wrap:nth-child(2){
+  width:8%;
+  padding: 0 3%;
+  box-sizing: border-box;
+}
+
+/* layout */
+ul.lay.content {
+  display: flex;
+  /* float: right; */
+  width: 100%;
+  justify-content: flex-end
+}
+ul.lay.content > li:nth-child(1) {
+  width: 20%;
+}
+ul.lay.content > li:nth-child(2) {
+  width: 30%;
+}
+ul.lay.content > li:nth-child(3) {
+  width: 36%;
+  min-width: 44px;
+}
+ul.lay.content > li:nth-child(3) .wrap {
+  display: flex;
+}
+ul.lay.content > li:nth-child(3) ul {
+  width: 50%;
+  font-size: 18px;
+}
+ul.lay.content > li:nth-child(3) ul li:nth-child(1) {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+}
+ul.lay.content > li:nth-child(3) ul li:nth-child(2) {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+}
+ul.lay.content > li:nth-child(3) ul li:nth-child(3) {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+}
+ul.lay.content > li:nth-child(3) ul:nth-child(2) li:nth-child(1) {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+ul.lay.content > li:nth-child(3) ul:nth-child(2) li:nth-child(2) {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+/* view */
+.view {
+  clear: both;
+  padding-bottom: 600px;
+}
+/* 웹 */
+.view .web_case {
+  position: relative;
+  top: 240px;
+  left: calc(50% - 536.5px);
+  z-index: 5;
+}
+.view .view_bg {
+  position: absolute;
+  top: 250px;
+  left: calc(50% - 525px);
+  display: block;
+  width: 1050px; height: 800px;
+  background-color: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.view .view_bg img {
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 514.5px);
+  z-index: 4;
+  animation: vimg_move 6s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes vimg_move {
+  0% {
+    top: 10px;
+  }
+  5% {
+    top: 10px;
+  }
+  35% {
+    top: -520px;
+  }
+  65% {
+    top: -1100px;
+  }
+  95% {
+    top: -1500px;
+  }
+  100% {
+    top: -1500px;
+  }
+}
+/* 모바일 */
+/* .view .moblie {
+  position: relative;
+  background-color: turquoise;
+} */
+.view .moblie_case {
+  position: absolute;
+  bottom: 230px;
+  right: 200px;
+  display: block;
+  z-index: 10;
+}
+.view .moblie_bg {
+  position: absolute;
+  right: 202px;
+  bottom: 236px;
+  display: block;
+  width: 284px; height: 596px;
+  background-color: #fff;
+  border-radius: 30px;
+  z-index: 8;
+  overflow: hidden;
+}
+.view .moblie_bg img {
+  position: absolute;
+  top: -12px; left: -2px;
+  z-index: 9;
+  animation: img_move 6s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes img_move {
+  0% {
+    top: -10px;
+  }
+  5% {
+    top: -10px;
+  }
+  35% {
+    top: -360px;
+  }
+  65% {
+    top: -720px;
+  }
+  95% {
+    top: -1150px;
+  }
+  100% {
+    top: -1150px;
+  }
+}
+
+.view .v_box {
+  width: 380px; height: 56px;
+  border: 1px solid #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 56px;
+  text-align: center;
+  color: #cfd9e2;
+  font-family: 'Jost', sans-serif;
+  overflow: hidden;
+  position: absolute;
+  bottom: 70px;
+  left: calc(50% - 190px);
+}
+.view .v_box a {
+  font-family: 'Jost', sans-serif;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+}
+.view .v_box a:hover {
+  color: #0d50a0;
+}
+.view .v_box:hover::after {
+  content: '';
+  display: block;
+  width: 400px; height: 150px;
+  position: absolute;
+  top: -48px; left: -10px;
+  z-index: 10;
+  background-color: #cfd9e2;
+  transform: rotate(-10deg);
+  animation: box_bg 0.5s;
+}
+@keyframes box_bg {
+	0% {
+    left: -500px;
+	}
+	100% {
+    left: -10px;
+	}
+}
