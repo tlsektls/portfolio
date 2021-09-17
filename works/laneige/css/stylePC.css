@@ -1,0 +1,382 @@
+header {
+  padding: 0 30px;
+  /* border-bottom: 1px solid #444; */
+}
+header h1 a img {
+  width: 120px;
+}
+
+ul.icon {
+  top: 20px; right: 40px;
+}
+ul.icon li:nth-child(1),
+ul.icon li:nth-child(2) {
+  display: block;
+}
+ul.icon li:nth-child(4) {
+  display: none;
+}
+
+nav{
+  min-height: 60px!important;
+  display: flex!important;
+  background-color: transparent;
+}
+.gnb {
+  display: block;
+  display: flex;
+  justify-content: space-evenly;
+  width: 640px;
+  position: fixed;
+  top: 0px;
+  left: calc(50% - 320px);
+}
+.gnb > li {
+  width: auto;
+}
+.gnb > li > a {
+  text-indent: 0px;
+  border-bottom: none;
+  text-align: center;
+}
+.gnb > li > a::after,
+.gnb > li > a.active::after {
+  display: none;
+}
+/* .gnb > li > a 가 클릭 되도 효과 없애기 */
+.gnb > li > a.active {
+  background-color: transparent;
+  color: #000;
+  font-weight: 600;
+}
+.gnb .inner.active {
+  display: flex;
+}
+/* .gnb .inner {
+  display: block;
+} */
+
+/* li(1)에 hover 되면 보이게 하기 */
+.gnb li .inner_bg.active .inner {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  left: calc(50% - 570px);
+  top: 60px;
+  width: 800px;
+  height: 44px;
+  z-index: 100;
+}
+
+.gnb li .inner_bg.active {
+  display: block;
+  position: fixed;
+  top: 60px; left: 0;
+  width: 100%;
+  height: 44px;
+  background-color: #f7f7f7;
+  z-index: 80;
+}
+.gnb li .inner li {
+  width: 16.666%;
+}
+.gnb li .inner li a {
+  padding: 6px 0px;
+  border-bottom: none;
+  width: 100%;
+}
+.gnb li .inner li a:hover {
+  font-weight: 600;
+}
+
+/* 2번째 inner with 이미지 */
+.gnb li:nth-of-type(2) .inner_bg.active .inner {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 60px;
+  max-width: 1000px;
+  margin: 0 calc(50% - 500px);
+  box-sizing: border-box;
+  padding: 60px 20px 20px 50px;
+  z-index: 100;
+  height: 520px;
+}
+.gnb li:nth-of-type(2) .inner_bg.active {
+  display: block;
+  position: fixed;
+  top: 60px; left: 0;
+  width: 100%;
+  height: 520px;
+  background-color: #f7f7f7;
+  z-index: 80;
+}
+.gnb li:nth-of-type(2) .inner > li:first-of-type {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+}
+.gnb li:nth-of-type(2) .inner > li:first-of-type > a {
+  border: none;
+  font-weight: 300;
+}
+.gnb li:nth-of-type(2) .inner li {
+  width: 22.2222%;
+  margin: 1%;
+}
+.gnb li:nth-of-type(2) .inner > li > a {
+  padding: 4px 0;
+  margin: 0;
+  font-weight: 600;
+  border-bottom: 1px solid #000;
+}
+.gnb li:nth-of-type(2) .inner .detail li:first-of-type {
+  padding-top: 8px;
+}
+.gnb li:nth-of-type(2) .inner .detail li {
+  width: 100%;
+}
+.gnb .inner .detail li a:hover {
+  font-weight: 600;
+}
+.gnb .inner li.bs_img {
+  width: 50%;
+  margin-left: 0;
+}
+.gnb .inner li.bs_img img {
+  width: 100%;
+  top: 10px; right: 0px;
+}
+.gnb .inner li.bs_img .txt {
+  position: absolute;
+  top: 62%; left: 0px;
+}
+
+.gnb li:nth-of-type(2) .inner > li:last-of-type > a {
+  border: none;
+}
+.gnb li:nth-of-type(2) .inner .detail {
+  display: block;
+}
+.gnb li:nth-of-type(2) .inner .detail li a {
+  border-bottom: none;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.gnb > li:nth-of-type(7),
+.sign, nav .close {
+  display: none;
+}
+
+
+/* main */
+/* banner */
+.banner div.new {
+  text-align: center;
+  margin: 14% 0 10px 120px;
+}
+.banner h2 {
+  font-size: 46px;
+  margin: 0 116px;
+  text-align: left;
+}
+.banner .ban4 h2,
+.banner .ban5 h2 {
+  margin: 14% 0 10px 116px;
+}
+.banner p {
+  font-size: 22px;
+  text-align: left;
+  margin: 25px 0 0 120px;
+  width: 440px;
+  line-height: 26px;
+}
+.banner .swiper-slide p:nth-of-type(2) {
+  display: block;
+  font-size: 16px;
+  margin: 3px 0 0 120px;
+}
+
+/* bestseller */
+.bestseller .wrap {
+  height: 460px;
+}
+.bestseller h3 {
+  font-size: 42px;
+}
+.bestseller .swiper-slide p {
+  width: 280px;
+}
+
+
+/* brand */
+.brand {
+  margin: 50px 0;
+}
+.brand ul.brandAd {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+.brand ul.brandAd li {
+  min-width: 245px;
+  max-width: 367px;
+  padding: 0 20px;
+}
+
+/* gallery */
+.gallery {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+.gallery .wrap {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.gallery .wrap1,
+.gallery .wrap4 {
+  width: 55%;
+}
+.gallery .wrap2,
+.gallery .wrap3 {
+  width: 35%;
+}
+.gallery .wrap3 {
+  position: absolute;
+  left: 4vw;
+  top: 32vw;
+}
+.gallery .wrap4 {
+  position: absolute;
+  right: 4vw;
+  top: 64vw;
+}
+.gallery .g_logo {
+  display: block;
+  opacity: 0;
+  position: fixed;
+  z-index: 110;
+  top: calc(50% - 148px);
+  left: calc(50% - 91px);
+  transition: 0.5s;
+}
+.gallery .g_logo.show {
+  opacity: 1;
+}
+.gallery .wrap1 {
+  margin-top: 0;
+}
+
+.live {
+  margin-top: 50vw;
+}
+.live h2 {
+  font-size: 42px;
+}
+.live .container {
+  width: 80%;
+  max-width: 940px;
+  /* margin: 0 calc(50% - 470px); */
+  margin: 0 10%;
+}
+
+
+footer {
+  background-color: #fff;
+}
+address {
+  border: none;
+  cursor: inherit;
+  position: absolute;
+  top: 140px; left: 40px;
+}
+.f_gnb {
+  display: flex;
+  line-height: 38px;
+  height: 54px;
+  padding: 0 40px;
+  border-top: #ccc 1px solid;
+  border-bottom: #ccc 1px solid;
+}
+.f_gnb .sns {
+  display: flex;
+}
+.f_gnb .sns a {
+  width: 26px;
+  margin: 6px 4px;
+}
+.f_gnb .sns a img {
+  width: 24px;
+}
+.f_gnb li {
+  margin: 8px 10px;
+}
+.consel_w {
+  display: flex;
+  float: left;
+  justify-content: left;
+  margin: 20px 0 100px;
+}
+.consel_w p {
+  text-align: left;
+  line-height: 20px;
+  padding: 0 40px;
+  border-right: 1px solid #ccc;
+}
+.consel_w img {
+  width: 71px;
+  height: 51px;
+  margin-left: 40px;
+}
+
+.lang {
+  margin: 0 40px 100px 0;
+  display: block;
+  float: right;
+  position: relative;
+}
+.l_show {
+  display: flex;
+  padding: 14px 20px;
+  width: 272px;
+}
+
+ul.langs {
+  /* display: block; */
+  position: absolute;
+  top: -424px; left: 20px;
+  z-index: 100;
+  width: 272px;
+  height: inherit;
+  background-color: #fff;
+}
+ul.langs li {
+  box-sizing: border-box;
+  padding: 0;
+  font-weight: 400;
+}
+ul.langs li:first-child {
+  display: none;
+}
+ul.langs li a {
+  padding: 10px 14px;
+  border: none;
+  font-size: 15px;
+}
+ul.langs li:nth-of-type(2) a {
+  font-weight: 400;
+  background-color: #fff;
+}
+ul.langs li a:hover {
+  background-color: #f7f7f7;
+  color: #4477be;
+  text-decoration: none;
+}

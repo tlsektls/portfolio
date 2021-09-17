@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.banner div.new {
+  margin: 14% 0 10px 200px;
+}
+.banner h2 {
+  margin: 0 196px;
+}
+.banner .ban4 h2,
+.banner .ban5 h2 {
+  margin: 14% 0 10px 196px;
+}
+.banner p {
+  margin: 25px 0 0 200px;
+}
+.banner .swiper-slide p:nth-of-type(2) {
+  margin: 0 0 0 200px;
+}
+.brand ul.brandAd {
+  width: 90%;
+  margin: auto;
+}
+.live .container {
+  max-width: 1160px;
+  width: 80%;
+  margin: 0 calc(50% - 580px);
+}

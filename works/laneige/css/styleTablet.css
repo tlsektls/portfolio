@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* banner */
+.swiper-container.banner {
+  width: 100%; height: calc(94vh - 60px);
+}
+/* .swiper-wrapper {background: no-repeat / cover;} */
+.ban1 {background: url(../images/banner/banner21.jpg) no-repeat 50% 0 / cover;}
+.ban2 {background: url(../images/banner/banner22.png) no-repeat 50% 0 / cover;}
+.ban3 {background: url(../images/banner/banner23.png) no-repeat 50% 0 / cover;}
+.ban4 {background: url(../images/banner/banner24.jpg) no-repeat 50% 0 / cover;}
+.ban5 {background: url(../images/banner/banner25.jpg) no-repeat 50% 0 / cover;}
+
+.bestseller h3,
+.live h2 {
+  font-size: 34px;
+}
+.live .container {
+  max-width: 720px;
+}

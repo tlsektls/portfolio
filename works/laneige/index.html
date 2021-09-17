@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>라네즈 홈페이지</title>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="140x140" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="68x68" href="images/favicon/favicon.ico">
+
+  <!-- font 'Gothic A1', 'Urbanist'-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fonts.css">
+
+  <!-- swiper css -->
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- 내가 작성한 css -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/styleTablet.css" media="(min-width:768px)">
+  <link rel="stylesheet" href="css/stylePC.css" media="(min-width:1024px)">
+  <link rel="stylesheet" href="css/stylePC2.css" media="(min-width:1440px)">
+
+  <!-- Jquery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="../../js/jquery-ui.min.js"></script>
+  <script src="../../js/ScrollTrigger.min.js"></script>
+  <!-- 내가 작성한 js -->
+  <script src="index.js"></script>
+  
+  
+</head>
+
+<body>
+<header>
+  <h1><a href="#"><img src="images/laneige-logo.svg" alt="logo"></a></h1>
+  <ul class="icon">
+    <li><a href="#"><img src="images/header/user.svg" alt="login"></a></li>
+    <li><a href="#"><img src="images/header/location2.svg" alt="location"></a></li>
+    <li><a href="#"><img src="images/header/search.svg" alt="search"></a></li>
+    <li><a href="#"><img src="images/header/menu.png" alt="menu" class="icon_menu"></a></li>
+  </ul>
+
+  <nav>
+    <ul class="gnb">
+      <li>
+        <a href="#">브랜드</a>
+        <div class="inner_bg">
+        <ul class="inner">
+          <li><a href="#">브랜드 스토리</a></li>
+          <li><a href="#">브랜드 캐릭터</a></li>
+          <li><a href="#">블루 무브먼트</a></li>
+          <li><a href="#">루미너스 라이브</a></li>
+          <li><a href="#">플래그십 스토어</a></li>
+        </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">메이크업</a>
+        <div class="inner_bg">
+        <ul class="inner">
+          <li><a href="#">전체보기</a></li>
+          <li>
+            <a href="#">페이스</a>
+            <ul class="detail">
+              <li><a href="#">전체보기</a></li>
+              <li><a href="#">프라이머/메이크업베이스</a></li>
+              <li><a href="#">파운데이션/컨실러</a></li>
+              <li><a href="#">쿠션</a></li>
+              <li><a href="#">파우더/팩트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">아이</a>
+            <ul class="detail">
+              <li><a href="#">전체보기</a></li>
+              <li><a href="#">아이브로우</a></li>
+              <li><a href="#">아이라이너</a></li>
+              <li><a href="#">마스카라</a></li>
+              <li><a href="#">소도구</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">립</a>
+            <ul class="detail">
+              <li><a href="#">전체보기</a></li>
+              <li><a href="#">립스틱</a></li>
+              <li><a href="#">립틴트</a></li>
+              <li><a href="#">립밤</a></li>
+            </ul>
+          </li>
+          <li class="bs_img"><a href="#">
+            <img src="images/header/makeup.jpg" alt="bestsellerImg">
+            <div class="txt">
+              <h3>BEST SELLER</h3>
+              <p>네오쿠션_매트</p>
+            </div>
+          </a></li>
+        </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">베스트&신상품</a>
+        <div class="inner_bg">
+        <ul class="inner">
+          <li><a href="#">신상품</a></li>
+          <li><a href="#">어워드 위너</a></li>
+          <li><a href="#">베스트셀러</a></li>
+        </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">스킨케어</a>
+        <div class="inner_bg">
+        <ul class="inner">
+          <li><a href="#">전체보기</a></li>
+          <li><a href="#">유형별</a></li>
+          <li><a href="#">고민별</a></li>
+          <li><a href="#">라인별</a></li>
+        </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">옴므</a>
+        <div class="inner_bg">
+        <ul class="inner">
+          <li><a href="#">전체보기</a></li>
+          <li><a href="#">유형별</a></li>
+          <li><a href="#">고민별</a></li>
+          <li><a href="#">라인별</a></li>
+        </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">이벤트</a>
+      </li>
+      <li>
+        <a href="#"><img src="images/sns/instagram.png" alt="instagram"></a>
+        <a href="#"><img src="images/sns/facebook.png" alt="facebook"></a>
+        <a href="#"><img src="images/sns/youtube.png" alt="youtube"></a>
+        <a href="#"><img src="images/sns/tiktok.png" alt="tiktok"></a>
+      </li>
+    </ul>
+    <ul class="sign">
+      <li><a href="#">로그인</a></li>
+      <li><a href="#">매장찾기</a></li>
+    </ul>
+    <a href="#" class="close"><img src="images/header/close_m.png" alt="close"></a>
+  </nav>
+</header>
+
+<main>
+  <section class="swiper-container banner">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide ban1"><a href="#">
+        <div class="eng new">new</div>
+        <h2>네오 파운데이션_매트</h2>
+        <p data-swiper-parallax="-1000">얇고 촘촘한 구름결 커버</p>
+        <p data-swiper-parallax="-1000">#자연광커버 #48시간지속커버</p>
+      </a></div>
+      <div class="swiper-slide ban2"><a href="#">
+        <div class="eng new">new</div>
+        <h2>얼티미스틱 아쿠아 틴트</h2>
+        <p data-swiper-parallax="-1000">아쿠아 틴트로 입술을 드로잉하다</p>
+        <p data-swiper-parallax="-1000">#스밈틴트 #48아쿠아글로우</p>
+      </a></div>
+      <div class="swiper-slide ban3"><a href="#">
+        <div class="eng new">new</div>
+        <h2>래디언-C 선크림</h2>
+        <p data-swiper-parallax="-1000">미백과 자외선을 한번에 해결할 수 있는 단 하나의 솔루션</p>
+        <p data-swiper-parallax="-1000">#잡티선크림 #비타민자차</p>
+      </a></div>
+      <div class="swiper-slide ban4"><a href="#">
+        <h2>네오쿠션</h2>
+        <p data-swiper-parallax="-1000">화제의 10관왕!<br>한 번의 터치로 타고난 듯 완벽한 피부 완성</p>
+        <p data-swiper-parallax="-1000">#함부로묻지않게 #네오로밀착</p>
+      </a></div>
+      <div class="swiper-slide ban5"><a href="#">
+        <h2 class="eng">BLUE MOVEMENT<br>FOR THE PLANET</h2>
+        <p data-swiper-parallax="-1000">맑고 깨끗한 물의 생명력을 지키는<br>라네즈의 즐거운변화의 시작</p>
+      </a></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <section class="bestseller BG_C" data-color="white">
+    <h3 class="eng">best seller</h3>
+    <div class="wrap">
+      <video class="videoBG" src="images/bestseller-bg.mp4" preload autoplay muted loop  playsinline poster="images/bestseller-bg.mp4">
+      </video>
+    </div>
+
+    <div class="container">
+    <div class="swiper-container best_products">
+      <div class="swiper-wrapper products">
+        <div class="swiper-slide">
+          <a href="#">
+          <img src="images/best/best1.png" alt="Cream Skin Refiner" data-aos="fade-up">
+          <div class="eng">Cream Skin Refiner</div>
+          <h4>크림 스킨</h4>
+          <p>스킨인데 뛰어난 보습 지속력과, 산뜻한 사용감으로 이만한 스킨은 없는 것 같아요</p>
+          <span>@rabb********</span>
+        </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+          <img src="images/best/best2.png" alt="Neo cushion">
+          <div class="eng">NEO CUSHION</div>
+          <h4>네오 쿠션</h4>
+          <p>마스크때문에 매트한 쿠션 샀는제 지금짜지 썼던 쿠션중에 제일 마무리감이 좋았어요</p>
+          <span>@euns******</span>
+        </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+          <img src="images/best/best3.png" alt="Radian-C cream" data-aos="fade-up">
+          <div class="eng">RADIAN-C CREAM</div>
+          <h4>래디언-C 크림</h4>
+          <p>벌써 3통째에요! 기미가 고민인 요즘 사용하면 피부가 밝아지고 확실히 잡티가 옅어지네요~</p>
+          <span>@enji****</span>
+        </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+          <img src="images/best/best4.png" alt="Water sleeping mask EX" data-aos="fade-up">
+          <div class="eng">Water Sleeping Mask EX</div>
+          <h4>워터 슬리핑 마스크 EX</h4>
+          <p>수분감 충만한 슬리핑팩! 밤에 듬쭉 바르고 자고 일어나면 아침에 화장이 매우 잘먹는다</p>
+          <span>@heat********</span>
+        </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+          <img src="images/best/best5.png" alt="Lip sleeping mask EX" data-aos="fade-up">
+          <div class="eng">Lip Sleeping Mask EX</div>
+          <h4>립 슬리핑 마스크 EX</h4>
+          <p>자기전 딱 바르고 나면 다음 날 입술 컨디션이 넘넘 좋아져서 요즘 매일 사용하고 았어요</p>
+          <span>@cosm********</span>
+        </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="images/best/best6.png" alt="Water bank hydro essenc" data-aos="fade-up">
+            <div class="eng">Water Bank Hydro Essence</div>
+            <h4>워터뱅크 하이드로 에센스</h4>
+            <p>얼굴도 속당김없이 여전히 촉촉하구요 재구매의사 100%에요 다들 정말 추천합니다.</p>
+            <span>@blin****</span>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    </div>
+  </section>
+
+  <section class="brand BG_C" data-color="white">
+    <ul class="brandAd">
+      <li><a href="#" data-aos="fade-up" data-aos-delay = "200" data-aos-duration="5000">
+        <div class="eng">brand story</div>
+        <img src="images/brand/brand1.jpg" alt="brand_story">
+        <h4>루미너스 뷰티</h4>
+        <p>수분 가득 맑고 건강하게 빛나는 아름다움, 루미너스 뷰티</p>
+      </a></li>
+      <li><a href="#" data-aos="fade-up" data-aos-duration="5000">
+        <div class="eng">new arrivals</div>
+        <img src="images/brand/brand2.png" alt="new_arrivals">
+        <h4>래디언-C 선크림</h4>
+        <p>자외선 차단은 완벽하게, 잡티케어는 분명하게</p>
+      </a></li>
+      <li><a href="#" data-aos="fade-up" data-aos-delay = "200" data-aos-duration="5000">
+        <div class="eng">lifestyle test</div>
+        <img src="images/brand/brand3.png" alt="lifestyle_test">
+        <h4>&lt;내가 크리어이터라면?&gt;참여하기</h4>
+        <p>라이프스타일로 알아보는 크리에이터 유형 테스트</p>
+      </a></li>
+    </ul>
+  </section>
+
+  <section class="gallery BG_C" data-color="blue">
+    <img src="images/luminous-gradient-color.png" alt="Llogo" class="g_logo">
+    <div class="wrap wrap1" data-aos="fade-up" data-aos-duration="5000"><a href="#">
+      <div class="eng">new arrivals</div>
+      <img src="images/gallery/gallery1.png" alt="피토알렉신_토너">
+      <h4>피토알렉신 수분진정 토너</h4>
+      <p>매일 자극받는 피부를 케어해두는 민감 진정 수분 토너</p>
+    </a></div>
+    
+    <div class="wrap wrap2" data-aos="fade-up" data-aos-duration="5000" data-aos-delay = "500"><a href="#">
+      <div class="eng">flagship store</div>
+      <img src="images/gallery/gallery2.png" alt="명동_쇼룸">
+      <h4>명동 쇼룸</h4>
+      <p>편안하게 제품을 체험하고 브랜드를 경험할 수 있는 라네즈 브랜드 공간</p>
+    </a></div>
+
+    <div class="wrap wrap3" data-aos="fade-up" data-aos-duration="5000" data-aos-delay = "300"><a href="#">
+      <div class="eng">best seller</div>
+      <img src="images/gallery/gallery3.png" alt="네오_쿠션">
+      <h4>네오 쿠션</h4>
+      <p>함부로 묻지 않게, 네오로 밀착</p>
+    </a></div>
+
+    <div class="wrap wrap4" data-aos="fade-up" data-aos-duration="5000" data-aos-delay = "300"><a href="#">
+      <div class="eng">new arrivals</div>
+      <img src="images/gallery/gallery4.jpg" alt="네오_파운데이션">
+      <h4>네오 파운데이션</h4>
+      <p>얇고 촘촘한 구름결 커버</p>
+    </a></div>
+  </section>
+
+  <section class="live BG_C" data-color="white">
+    <h2 class="eng">&#35;luminous live</h2>
+    <p class="eng">share your luminous moment with laneige!</p>
+    <div class="container">
+    <div class="swiper-container live_img">
+      <ul class="sns swiper-wrapper">
+        <li class="swiper-slide"><a href="#">
+          <img src="images/live/live1.jpg" alt="live1">
+          <div class="txt"> 
+            <span>@plusoa<br></span>
+            <span>apmall.official&#35;네오쿠션 &#35;민트처돌이 &#35;네오민트</span>
+          </div>
+        </a></li>
+        <li class="swiper-slide"><a href="#">
+          <img src="images/live/live2.jpg" alt="live2">
+          <div class="txt"> 
+            <span>@qkekqhek<br></span>
+            <span>라네즈 네오쿠션 매트 &#35;내돈내산 리뷰💚</span>
+          </div>
+        </a></li>
+        <li class="swiper-slide"><a href="#">
+          <img src="images/live/live3.jpg" alt="live3">
+          <div class="txt"> 
+            <span>@qkekqhek<br></span>
+            <span>라네즈 네오쿠션 매트 &#35;내돈내산 리뷰💚</span>
+          </div>
+        </a></li>
+        <li class="swiper-slide"><a href="#">
+          <img src="images/live/live4.jpg" alt="live4">
+          <div class="txt">
+            <span>chaen_yyang<br></span>
+            <span>베라에서도 민초만 먹는 &#35;민초처돌이 챈냥이</span>
+          </div>
+        </a></li>
+        <li class="swiper-slide"><a href="#">
+          <img src="images/live/live5.jpg" alt="live5">
+          <div class="txt">
+            <span>applemint_22<br></span>
+            <span>라네즈 네오 쿠션 네오 쿠션은 마스크를 쓰고 나서 더욱 필수템이 됐어요.</span>
+          </div>
+        </a></li>
+        <li class="swiper-slide"><a href="#">
+          <img src="images/live/live6.jpg" alt="live6">
+          <div class="txt">
+            <span>yoenhee_90<br></span>
+            <span>벌써 빨리 주말이 왔네염^^</span>
+          </div>
+        </a></li>
+        <li class="swiper-slide"><a href="#">
+          <img src="images/live/live7.jpg" alt="live7">
+          <div class="txt">
+            <span>yoenhee_90<br></span>
+            <span>벌써 빨리 주말이 왔네염^^</span>
+          </div>
+        </a></li>
+        <li class="swiper-slide"><a href="#">
+          <img src="images/live/live8.jpg" alt="live8">
+          <div class="txt">
+            <span>solkang_beauty<br></span>
+            <span>&#35;유료광고 파우치 속 필수템 ☝🏻</span>
+          </div>
+        </a></li>
+        <li class="swiper-slide"><a href="#">
+          <img src="images/live/live9.jpg" alt="live9">
+          <div class="txt">
+            <span>imyour_woni<br></span>
+            <span>&#35;유료광고 &#35;라네즈 &#35;래디언씨크림</span>
+          </div>
+        </a></li>
+        <li class="swiper-slide"><a href="#">
+          <img src="images/live/live10.png" alt="live10">
+          <div class="txt">
+            <span>imyour_woni<br></span>
+            <span>&#35;유료광고 &#35;라네즈 &#35;래디언씨크림</span>
+          </div>
+        </a></li>
+      </ul>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    </div>
+    <div class="eng box"><a href="#">View More</a></div>
+  </section>
+</main>
+
+<footer>
+  <address class="eng">&copy;AMOREPACIFIC CORPORATION. ALL RIGHTS RESERVED.</address>
+
+  <ul class="f_gnb">
+    <li><a href="#">회사소개</a></li>
+    <li><a href="#">서비스이용약관</a></li>
+    <li><a href="#">UGC이용약관</a></li>
+    <li><a href="#">개인정보처리방침</a></li>
+    <li><a href="#">영상정보처리방침</a></li>
+    <li><a href="#">뷰티포인트</a></li>
+    <li><a href="#">사이트맵</a></li>
+    <li><a href="#">공지사항</a></li>
+    <li class="sns">
+      <a href="#"><img src="images/sns/instagram.png" alt="instagram"></a>
+      <a href="#"><img src="images/sns/facebook.png" alt="facebook"></a>
+      <a href="#"><img src="images/sns/youtube.png" alt="youtube"></a>
+      <a href="#"><img src="images/sns/tiktok.png" alt="tiktok"></a>
+    </li>
+  </ul>
+
+  <div class="consel_w">
+    <div class="consel">
+    <p>고객상담실 (수신자요금부담) 080-023-5454</p>
+    <p>운영시간 : 월~금 09:00 ~ 18:00</p>
+    </div>
+    <img src="images/wa-mark.png" alt="wa-mark">
+  </div>
+
+  <div class="lang">
+    <div class="l_show">
+      <p>한국/한국어</p>
+      <img src="images/close.svg" alt="close">
+    </div>
+    <ul class="langs">
+      <li>언어선택<img src="images/close.png" alt="close"></li>
+      <li><a href="#">한국/한국어</a></li>
+      <li><a href="#">INTERNATIONAL/ENGLISH</a></li>
+      <li><a href="#">中国大陆/中文</a></li>
+      <li><a href="#">SINGAPORE/ENGLISH</a></li>
+      <li><a href="#">MALAYSIA/ENGLISH</a></li>
+      <li><a href="#">ประเทศไทย/ไทย</a></li>
+      <li><a href="#">VIỆT NAM/TIẾNG VIỆT</a></li>
+      <li><a href="#">INDONESIA/BAHASA INDONESIA</a></li>
+      <li><a href="#">HONGKONG/ENGLISH</a></li>
+      <li><a href="#">中國香港/繁體中文</a></li>
+      <li><a href="#">CANADA/ENGLISH</a></li>
+      <li><a href="#">UNITED STATES/ENGLISH</a></li>
+    </ul>
+  </div>
+
+
+</footer>
+
+</body>
+</html>
