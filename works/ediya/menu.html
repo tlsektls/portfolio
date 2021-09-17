@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>slide 메서드 연습</title>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<style>
+  body {margin: 0; font-size: 1.25rem; text-transform: capitalize;}
+  #lnb {
+    list-style: none;
+    margin: 0; padding: 0;
+    width: 300px;
+  }
+  #lnb h3 {
+    margin: 0;
+    background-color: #004d80; color: #fff;
+    cursor: pointer;
+    border-bottom: #fff 1px solid;
+  }
+  #lnb h3:hover {
+    background-color: #001e80;
+  }
+  #lnb p {
+  margin: 0;
+  padding: 10px 10px 30px;
+  background-color: #efefef;
+  display: none;
+  }
+</style>
+</head>
+
+<body>
+  <!-- 클릭 메뉴는 열리고 다른 메뉴는 닫힘 -->
+  <!-- 클릭 메뉴를 다시 클릭하면 열림 -->
+
+  <ul id="lnb">
+    <li class="box">
+      <h3>Menu 1</h3>
+      <p>사랑의 끝에 이상은 무엇을 안고, 운다. 설레는 가슴이 앞이 청춘의 뜨고, 얼음과 약동하다. 꾸며 너의 하였으며, 광야에서 사람은 이 봄바람이다.</p>
+    </li>
+    <li class="box">
+      <h3>Menu 2</h3>
+      <p>사랑의 끝에 이상은 무엇을 안고, 운다. 설레는 가슴이 앞이 청춘의 뜨고, 얼음과 약동하다. 꾸며 너의 하였으며, 광야에서 사람은 이 봄바람이다.</p>
+    </li>
+    <li class="box">
+      <h3>Menu 3</h3>
+      <p>사랑의 끝에 이상은 무엇을 안고, 운다. 설레는 가슴이 앞이 청춘의 뜨고, 얼음과 약동하다. 꾸며 너의 하였으며, 광야에서 사람은 이 봄바람이다.</p>
+    </li>
+    <li class="box">
+      <h3>Menu 4</h3>
+      <p>사랑의 끝에 이상은 무엇을 안고, 운다. 설레는 가슴이 앞이 청춘의 뜨고, 얼음과 약동하다. 꾸며 너의 하였으며, 광야에서 사람은 이 봄바람이다.</p>
+    </li>
+  </ul>
+  <ul id="gnb">
+    <li>
+      <a href="#">이디야 카페</a>
+      <ul class="in">
+        <li><a href="#">음료</a></li>
+        <li><a href="#">베이커리</a></li>
+        <li><a href="#">이디야 스낵</a></li>
+        <li><a href="#">MD</a></li>
+        <li><a href="#">비니스트</a></li>
+        <li><a href="#">이디야 캡슐 커피</a></li>
+        <li><a href="#">원두</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">이디야멤버스
+      <ul class="in">
+        <li><a href="#">멤버스 소개</a></li>
+        <li><a href="#">이디야카드</a></li>
+        <li><a href="#">선물하기</a></li>
+        <li><a href="#">이디야오더</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      </a>
+    </li>
+    <li>
+      <a href="#">기프트카드</a>
+      <ul class="in">
+        <li><a href="#">기프트카드 소개</a></li>
+        <li><a href="#">잔액조회</a></li>
+        <li><a href="#">분실신고/환불신청</a></li>
+        <li><a href="#">자주하는 질문</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">이디야커피랩</a>
+      <ul class="in">
+        <li><a href="#">이디야커피랩</a></li>
+        <li><a href="#">이디야커피랩 메뉴</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">이디야컬쳐랩</a>
+      <ul class="in">
+        <li><a href="#">뮤직페스타</a></li>
+        <li><a href="#">프로그램 및 시설 안내</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">이디야소식</a>
+      <ul class="in">
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">홈카페 레시피</a></li>
+        <li><a href="#">이디야 유큐브</a></li>
+        <li><a href="#">이디야 블로그</a></li>
+        <li><a href="#">이디야 인스타그램</a></li>
+        <li><a href="#">이디야 페이스북</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">매장찾기</a>
+      <ul class="in">
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </li>
+  </ul>
+<script>
+  // $('#lnb .box').eq(0).children('h3').on('click', function(){
+  //   $('#lnb .box').eq(0).children('p').slideDown();
+  //   $('#lnb .box').eq(1).children('p').slideUp();
+  //   $('#lnb .box').eq(2).children('p').slideUp();
+  //   $('#lnb .box').eq(3).children('p').slideUp();
+  // });
+  // $('#lnb .box').eq(1).children('h3').on('click', function(){
+  //   $('#lnb .box').eq(0).children('p').slideup();
+  //   $('#lnb .box').eq(2).children('p').slideUp();
+  //   $('#lnb .box').eq(3).children('p').slideUp();
+  //   $('#lnb .box').eq(1).children('p').slideToggle(); 
+  // });
+  $('#lnb h3').on('click', function() {
+    // 내가 클릭한 그 #lnb h3
+    $(this).next().slideToggle();
+    $(this).parent().siblings().children('p').slideUp();
+  });
+</script>
+</body>
+</html>

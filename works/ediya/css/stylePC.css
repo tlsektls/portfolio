@@ -1,0 +1,454 @@
+@charset "utf-8";
+h3 {
+  font-size: 42px;
+  line-height: 42px;
+}
+
+/***** Deco *****/
+.people::before {
+  width: 119px;
+  height: 442px;
+  transform: scale(1.2);
+  bottom: 150px; right: 30px;
+}
+
+/*** header ***/
+.head_gnb {
+  top: 30px;
+}
+.head_gnb > h1::after {
+  display: none;
+}
+.head_gnb.up {
+  top: 0px;
+}
+nav.up {
+  top: -30px;
+  transition: 0.2s;
+}
+
+/* nav ********나중에 고쳐야함*/
+nav {
+  display: inline-block;
+  position: fixed;
+  top: 0px;
+  background-color: #fff;
+  color: #000;
+}
+#register {
+  display: flex;
+  justify-content: flex-end;
+}
+#register span {
+  background-color: #666;
+}
+#register li {
+  padding: 0;
+  margin: 10px 15px 0;
+  border-bottom: none;
+  color: #666;
+}
+#register li:nth-of-type(2),
+#register li:nth-of-type(3) {
+  display: inline-block;
+}
+#register > li:last-of-type > a {
+  margin: 10px 30px 0 0px;
+  border-bottom: 1px solid #666;
+  position: relative;
+}
+#register > li:last-of-type > a::before {
+  content: '';
+  background: url(../images/imageboard.png) no-repeat;
+  width: 6px; height: 3px;
+  background-position: -190px -9px;
+  position: absolute;
+  right: -14px; top: 10px;
+}
+#register li ul.lang {
+  /* display: block; */
+  position: absolute;
+  background-color: #fff;
+  right: 58px; bottom: -30px;
+  width: 19px;
+  z-index: 100;
+}
+#register li ul.lang li {
+  width: 100%;
+  margin: 0;
+}
+#register li ul.lang li a {
+  background-color: #fff;
+  display: block;
+  padding: 4px 0;
+  width: 40px;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+}
+#register li ul.lang.down {
+  display: block;
+}
+
+#gnb li:last-of-type,
+#lang {
+  display: none;
+}
+#gnb li a::after {
+  display: none;
+}
+#gnb {
+  display: flex;
+}
+
+
+/****** 베너 *******/
+.banner {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  padding: 150px 0 0px 5%;
+  border-bottom: none;
+}
+.banner > h2 {
+  margin-top: 110px;
+  font-size: 60px;
+  order: 1;
+  text-align: left;
+}
+.banner > p{
+  order: 2;
+  text-align: left;
+  font-size: 15px;
+}
+.banner ul {
+  order: 3;
+  text-align: left;
+}
+/* hover *********/
+.banner li:first-of-type a.board:hover {
+  background-position: -5px -46px;
+}
+.banner li:nth-child(2) a.board:hover {
+  background-position: -52px -46px;
+}
+.banner > img {
+  text-align: right;
+  width: 450px; height: 450px;
+  order: 4;
+  position: absolute;
+  right: 5%;
+}
+
+/***** main *****/
+
+.franchise {
+  margin-top: 200px;
+}
+.franchise > .wrap {
+  width: 95%;
+}
+.franchise > .wrap > div {
+  width: 25%;
+}
+.franchise > .wrap h4 {
+  font-size: 52px;
+  width: 90%;
+}
+.franchise > .wrap p {
+  font-size: 18px;
+}
+
+/* ***************테블릿에서 박스 만들면 hover주기 */
+.info {
+  height: 360px;
+  margin-bottom: 70px;
+}
+.info li h5 {
+  font-size: 26px;
+  padding: 40px 0 0;
+}
+.info figure > figcaption {
+  font-size: 14px;
+  margin: 15px 0 0;
+}
+.info figure > img {
+  height: 120px;
+  margin: 20px 0;
+}
+.info span.bgH {
+  position: absolute;
+  background-color: rgba(115, 106, 214, 0.2);
+  height: 360px; width: 100%;
+  top: 0;
+  display: none;
+}
+.info li:hover span.bgH {
+  display: block;
+}
+.info span.border {
+  top: 130px;
+  height: 120px;
+}
+
+
+.value > p {
+  top: 100px; left: 60px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.value > h3 {
+  top: 100px; left: 60px;
+  font-size: 44px;
+  line-height: 44px;
+  letter-spacing: 2px;
+}
+.value > .v3 {
+  top: 250px; right: 250px;
+}
+.value .v3 h4 {
+  font-size: 34px;
+  position: relative;
+}
+.value .v3 p {
+  font-size: 16px;
+  position: absolute;
+  text-align: right;
+}
+
+.value .v3 h4:first-of-type {
+  left: 70px;
+}
+.value .v3 h4:first-of-type::after {
+  top: -34px;
+  left: -65px;
+}
+.value .v3 a:first-of-type.board {
+  position: absolute;
+  top: 25px;
+  left: 270px;
+}
+.value .v3 p:first-of-type {
+  top: 40px;
+  left: 220px;
+}
+.value .v3 h4:nth-of-type(2) {
+  top: 125px;
+  left: -80px;
+}
+.value .v3 h4:nth-of-type(2)::after{
+  top: -50px;
+  left: -30px;
+}
+.value .v3 a:nth-of-type(2).board {
+  position: absolute;
+  top: 200px;
+  left: 105px;
+}
+.value .v3 p:nth-of-type(2) {
+  top: 210px;
+  left: 30px;
+}
+.value .v3 h4:nth-of-type(3) {
+  top: 215px;
+  left: -40px;
+}
+.value .v3 h4:nth-of-type(3)::after{
+  top: -30px;
+  left: 20px;
+}
+.value .v3 a:nth-of-type(3).board {
+  position: absolute;
+  top: 310px;
+  left: 160px;
+}
+.value .v3 p:nth-of-type(3) {
+  top: 340px;
+  left: 100px;
+}
+.value .v3::after {
+  content: "";
+  background: url(../images/v3line.png) no-repeat;
+  display: block;
+  position: absolute;
+  width: 167px; height: 340px;
+  top: -20px; left: 120px;
+}
+.value .v3 .board:hover {
+  background-position: -102px -40px;
+  z-index: 50;
+}
+
+
+.lab img {
+  width: 470px; height: 470px;
+  margin: 25px 0;
+}
+.lab .detail {
+  margin: 350px 40px 0;
+}
+.lab h4 {
+  font-size: 36px;
+}
+.lab h4::before {
+  background-position: -15px 0;
+  width: 300px;
+  left: 20px; top: -190px;
+  transform: rotate(90deg);
+}
+.lab .wrap2 h4::before {
+  transform: rotate(90deg);
+}
+.lab p {
+  width: 350px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+
+.issue > h3 {
+  margin: 70px 0 20px;
+}
+.issue > .issues {
+  height: 210px;
+  margin: 0 auto 50px;
+  width: 90%;
+}
+.issue > ul.issues li {
+  padding: 0;
+}
+.issue > .issues > li:hover {
+  background-color: rgba(98, 132, 196, 0.2);
+}
+.issue > ul.issues li h5 {
+  font-size: 20px;
+  padding: 0 30px;
+}
+.issue > ul.issues li .detail p {
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0 30px;
+}
+
+.issue2 {
+  width: 95%;
+  margin: auto;
+}
+.issue2 .wrap {
+  height: 240px;
+}
+.issue2 h4 {
+  font-size: 26px;
+}
+.issue2 h4::before {
+  height: 4px;
+}
+.issue2 p {
+  font-size: 18px;
+  margin-top: 8px;
+}
+.issue2 a:hover p {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: rgba(0, 0, 0, 0.7);
+}
+.issue2 a p {
+  font-size: 16px;
+  border-radius: 40px;
+  width: 150px; height: 40px;
+  line-height: 40px;
+}
+.issue2 .wrap1 .brand a:first-of-type {
+  margin-right: 10px;
+}
+.issue2 .wrap2 a p {
+  width: 200px;
+}
+.issue2 .wrap2 a p::before {
+  top: 8px; left: -10px;
+  transform: scale(1.2);
+}
+
+
+.dream {
+  height: 440px;
+}
+.dream h3 {
+  padding: 60px 0 10px;
+}
+.dream p {
+  font-size: 16px;
+}
+.dream ul {
+  min-width: 800px;
+  width: 70%;
+  margin: 60px auto 0;
+}
+.dream li {
+  width: 48%; height: 200px;
+  padding: 30px;
+}
+.dream li:hover {
+  background-color: #fff;
+}
+.dream li:first-of-type {
+  left: 0;
+}
+.dream li:last-of-type {
+  right: 0;
+}
+.dream li h4 {
+  font-size: 28px;
+  width: 250px;
+  margin: auto;
+}
+.dream li p {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 14px auto 0;
+  width: 250px;
+}
+
+
+.people > .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.people > .wrap img {
+  width: 450px; height: 450px;
+  margin-left: 10%;
+}
+.people > .wrap h2 {
+  margin: 250px 0 10px 60px;
+  width: 200px;
+  font-size: 60px;
+  text-align: left;
+  line-height: 60px;
+}
+.people > .wrap p {
+  border-bottom: none;
+  text-align: left;
+  margin-left: 60px;
+}
+
+.people .employ {
+  width: 90%;
+  margin: 0 auto 60px;
+}
+.people > .employ > li {
+  width: 25%;
+  border-top: 1px solid #000;
+}
+.people > .employ > li:nth-child(2) .border {
+  border-right: #d9d9d9 1px solid;
+}
+.people > .employ p:last-of-type {
+  font-size: 12px;
+}
+.people > .employ > li:hover,
+.people > .employ > li:hover .border {
+  background-color: #223d82;
+  color: #fff;
+  border: none
+}
+.people > .employ > li:hover span.board {
+  background-position: -141px -17px;
+}

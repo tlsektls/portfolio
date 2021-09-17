@@ -1,0 +1,338 @@
+@charset "utf-8";
+/***** common *****/
+h3 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+/***** Deco *****/
+.franchise{
+  content: '';
+  display: block;
+  background-image: url(../images/bgDeco1.png), url(../images/bgDeco2.png);
+  background-repeat: no-repeat, no-repeat;
+  width: 100%;
+  background-position: -20% 10%, 120% 100%;
+}
+
+.lab {
+  content: '';
+  display: block;
+  background-image: url(../images/bgDeco2.png), url(../images/bgDeco1.png);
+  background-repeat: no-repeat, no-repeat;
+  width: 100%;
+  background-position: -20% 100%, 130% -25%;
+}
+
+.people {
+  position: relative;
+  height: initial;
+}
+.people::before {
+  content: '';
+  background: url(../images/bgDecoC.png) no-repeat;
+  width: 99px;
+  height: 368px;
+  position: absolute;
+  bottom: 400px; right: 30px;
+}
+
+
+/* *****header***** */
+.banner > h2 {
+  font-size: 42px;
+  margin: 90px 0 15px 0;
+}
+.banner > img {
+  width: 360px; height: 360px;
+}
+
+
+/*********** main  ***********/
+
+.franchise > h3 {
+  margin-bottom: 10px;
+}
+.franchise > .wrap {
+  width: 550px;
+  margin: 0 auto 50px;
+  overflow: hidden;
+}
+.franchise > .wrap > div {
+  width: 50%;
+  float: left;
+}
+.franchise > .wrap > p {
+  font-size: 13px;
+  margin: 10px;
+  width: 80px;
+  margin: 10px auto;
+}
+.franchise > .wrap h4 {
+  font-size: 40px;
+  width: 180px;
+}
+
+.info {
+  height: 285px;
+}
+.info li {
+  position: relative;
+  width: 33.3333%; height: 100%;
+  float: left;
+  border-bottom: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.info span.border {
+  position: absolute;
+  height: 100px; width: 100%;
+  top: 92.5px; left: -0.5px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+
+.value {
+  position: relative;
+  margin: 0;
+}
+.value > p {
+  order: 1;
+  position: absolute;
+  text-align: left;
+  top: 70px; left: 50px;
+}
+.value > h3 {
+  line-height: 36px;
+  order: 2;
+  position: absolute;
+  text-align: left;
+  top: 70px; left: 50px;
+}
+.value > .v3 {
+  order: 3;
+  position: absolute;
+  top: 200px; right: 150px
+}
+
+.lab h3 {
+  padding: 150px 0 50px;
+}
+.lab img {
+  position: relative;
+  z-index: 50;
+  width: 450px; height: 425px;
+}
+
+.lab .wrap1,
+.lab .wrap2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.lab .wrap1 .detail {
+  order: 2;
+}
+.lab .detail {
+  margin: 70px 30px;
+}
+.lab h4 {
+  font-size: 30px;
+  position: relative;
+}
+.lab h4::before {
+  content: '';
+  background: url(../images/labDeco.png) no-repeat;
+  display: block;
+  width: 315px; height: 18px;
+  position: absolute;
+  left: -40px; top: -30px;
+  z-index: 10;
+}
+.lab .wrap2 h4::before {
+  transform: rotate(180deg);
+}
+.lab p {
+  width: 240px;
+  font-size: 14px;
+}
+
+.issue > h3 {
+  margin-top: 50px;
+}
+.issue > .issues {
+  display: flex;
+  height: 200px;
+}
+.issue > ul.issues li {
+  border-bottom: none;
+  box-sizing: border-box;
+  width: 33.3333%;
+  padding: 0 15px;
+  border-right: 1px solid #000;
+  position: relative;
+}
+.issue > ul.issues li:last-of-type {
+  border-right: none;
+}
+.issue > ul.issues li h5 {
+  margin: 35px auto 5px;
+}
+.issue > ul.issues .detail {
+  position: absolute;
+  bottom: 0;
+}
+/* ***********나중에 p 2줄 넘어가면 숨기기 */
+.issue > ul.issues li p span {
+  display: none;
+}
+
+.issue2 {
+  display: flex;
+}
+.issue2 .wrap {
+  padding: 50px 40px;
+  width: 33.333%;
+  height: 210px;
+}
+.issue2 h4::before {
+  width: 30px;
+  height: 3px;
+  top: 64px; left: 0px;
+}
+.issue2 p {
+  font-size: 12px;
+}
+.issue2 a p {
+  font-size: 10px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 17px;
+  width: 90px; height: 34px;
+  line-height: 34px;
+}
+.issue2 .wrap1 .brand {
+  display: flex;
+}
+.issue2 .wrap1 .brand a:first-of-type {
+  margin-right: 8px;
+}
+
+.issue2 .wrap2 a p {
+  width: 130px;
+  line-height: 10px;
+}
+.issue2 .wrap2 a p::before {
+  top: 6px; left: -10px;
+}
+.issue2 .wrap3 a p::after {
+  margin-left: 10px;
+}
+
+
+.dream {
+  height: 345px;
+}
+.dream ul {
+  /* display: flex; */
+  position: relative;
+  width: 80%;
+  max-width: 650px;
+  margin: auto;
+}
+.dream li {
+  width: 250px; height: 150px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+}
+.dream li:first-of-type {
+  left: 5%;
+}
+.dream li:last-of-type {
+  right: 5%;
+}
+.dream li h4 {
+  font-size: 24px;
+}
+.dream li p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+}
+
+
+.people > .wrap img {
+  width: 360px; height: 360px;
+}
+.people > .wrap h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+.people > .wrap p {
+  margin: 0;
+}
+
+.people .employ {
+  display: flex;
+  flex-wrap: wrap;
+}
+.people .employ > li {
+  width: 50%;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.people .employ > li .border {
+  padding: 0 30px;
+}
+.people .employ > li:nth-child(odd) .border {
+  border-right: #d9d9d9 1px solid;
+}
+.people .employ p:last-of-type {
+  font-size: 12px;
+}
+.people > .employ span.board {
+  bottom: 30px; right: 30px;
+}
+
+
+footer .site {
+  justify-content: start;
+  
+  border-top: #d9d9d9 1px solid;
+  border-bottom: #d9d9d9 1px solid;
+}
+footer > .site_line > .site > li { 
+  width: inherit;
+  padding: 15px 0;
+  border: none;
+  margin: 0 10px;
+}
+footer > .site_line > .site > li:first-of-type {
+  margin-left: 30px;
+}
+footer > .site_line > .site > li::after {
+  content: '';
+  display: inline-block;
+  background-color: #d9d9d9;
+  width: 1px; height: 10px;
+  margin-left: 20px;
+}
+footer > .site_line > .site > li:last-child:after {
+  content: '';
+  display: none;
+}
+
+footer > h2 {
+  text-align: right;
+  margin-right: 50px;
+}
+footer > address {
+  text-align: left;
+  margin: -50px 0 60px 50px;
+  line-height: 20px;
+}
+footer > address span:first-of-type {
+  margin-left: 0;
+}

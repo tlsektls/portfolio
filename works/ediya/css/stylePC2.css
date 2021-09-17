@@ -1,0 +1,75 @@
+@charset "utf-8";
+/****** 베너 *******/
+.banner {
+  padding: 150px 0 0px 5%;
+}
+.banner > h2 {
+  font-size: 100px;
+}
+.banner > p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.banner > img {
+  width: 600px; height: 600px;
+  right: 5%;
+}
+
+/***** main *****/
+.franchise {
+  margin-top: 250px;
+}
+.franchise > .wrap p {
+  margin: 24px;
+}
+.info figure > img {
+  height: 150px;
+  margin: 5px 0;
+}
+
+.value > p,
+.value > h3 {
+  left: 150px;
+  transform: scale(1.2);
+  width: 35%;
+  margin-left: 8%;
+}
+.value > .v3 {
+  transform: scale(1.2);
+  top: 190px; right: 350px;
+  margin-right: 8%;
+}
+
+.issue2 .wrap {
+  height: 300px;
+  padding: 60px 60px;
+}
+.issue2 h4::before {
+  width: 40px;
+  height: 4px;
+  top: 75px;
+}
+
+.dream {
+  height: 500px;
+}
+.dream h3 {
+  padding: 100px 0 10px;
+}
+
+.people > .wrap img {
+  width: 600px; height: 600px;
+  margin-left: 8%;
+}
+.people > .wrap h2 {
+  /* margin: 300px 0 10px 80px; */
+  margin: 300px 0 10px 20%;
+  width: 700px;
+  font-size: 90px;
+  line-height: 85px;
+}
+.people > .wrap p {
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 20%;
+}
