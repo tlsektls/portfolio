@@ -1,0 +1,60 @@
+[
+  {
+    "img" : "images/books/book2.jpg",
+    "alt" : "book2",
+    "subject" : "할머니의 팡도르",
+    "author" : "안나마리아 고치 저, 비올레타 로피즈 그림",
+    "price" : "&#8361;16,000"
+  }, 
+
+  {
+    "img" : "images/books/book3.jpg",
+    "alt" : "book3",
+    "subject" : "Poiesis",
+    "author" : "Suji Park",
+    "price" : "&#8361;55,000"
+  },
+
+  {
+    "img" : "images/books/book4.jpg",
+    "alt" : "book4",
+    "subject" : "휘슬 whistle vol.1 롱런",
+    "author" : "노사이드스튜디오",
+    "price" : "&#8361;15,000"
+  },
+  {
+    "img" : "images/books/book5.jpg",
+    "alt" : "book5",
+    "subject" : "흔들리는 선",
+    "author" : "글: 서지형, 그림: 유금분, 조남갑",
+    "price" : "&#8361;45,000"
+  },
+  {
+    "img" : "images/books/book6.jpg",
+    "alt" : "book6",
+    "subject" : "고을 매거진 3호 강릉",
+    "author" : "로우프레스",
+    "price" : "&#8361;16,000"
+  },
+  {
+    "img" : "images/books/book7.jpg",
+    "alt" : "book7",
+    "subject" : "봉별기",
+    "author" : "정아리",
+    "price" : "&#8361;13,000"
+  },
+  {
+    "img" : "images/books/book8.jpg",
+    "alt" : "book8",
+    "subject" : "새의 심장",
+    "author" : "마르 베네가스 저,하셀 카이아노 그림",
+    "price" : "&#8361;18,000"
+  },
+  {
+    "img" : "images/books/book9.jpg",
+    "alt" : "book9",
+    "subject" : "당신이 읽는 동안",
+    "author" : "워크룸프레스",
+    "price" : "&#8361;15,000"
+  }
+]

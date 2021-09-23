@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+h3 {font-size: 40px; margin: 40px 0;}
+
+ /* header */
+header .gnb_icon {
+  display: none;
+}
+header {
+  width: 100%; height: 80px;
+}
+header h1{
+  width: 150px;
+  padding: 24px 0 0 40px;
+}
+header h1 img {
+  width: 100%;
+}
+
+.gnb_wrap {display: block;}
+.gnb {
+  display: flex;
+  margin: 0; padding: 0;
+  width: 550px; height: initial;
+  background-color: transparent;
+  position: absolute;
+  top: 22px; right: 40px;
+}
+.gnb .S {display: block;}
+.gnb li a {
+  margin: 0; padding: 10px;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent;
+}
+.gnb li a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+.gnb li {
+  width: 25%;
+}
+
+/* main */
+/* .search_layer */
+.search_layer .tool button {
+  background: url(images/icon/search.svg) 50% 50% no-repeat;
+  text-indent: -9999px;
+  width: 30px; position: absolute;
+  top: 202px; left: calc(50% + 120px);
+  border: none;
+  cursor: pointer;
+}
+
+
+/* head */
+.head {
+  width: 100%; height: 94vh;
+}
+.head h2 {
+  font-size: 100px;
+  padding: 36vh 0 0;
+  font-weight: normal;
+}
+.head p.mouse {
+  margin-top: 28vh;
+}
+
+/* back_contain */
+.back_container {
+  width: 100%; height: 800px;
+}
+.back_container .back_contain {
+  height: 900px;
+  width: 80%;
+}
+.back p.cart_box:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* .book_contain */
+.book_contain {
+  grid-template:repeat(4, 24.6vw)/ repeat(4, calc(25vw - 5px));
+  /* grid-template-areas: 이름으로 영역 지정
+    "인용부호 안의 값은 하나의 행 안의 하나의 셀" 1번째 행
+    "txt txt" 2번째 행. 텍스트 다음 띄어쓰기를 통해 셀 표시
+    ". or none" 3번째 행. 비움. */
+  grid-template-areas:
+    "book1 book1 book2 book3"
+    "book1 book1 book4 book5"
+    "book6 book7 book10 book10"
+    "book8 book9 book10 book10"
+}
+.book .box_bg {
+  width: 24.6vw;
+  height: calc(25vw - 5px);
+}
+.book img {
+  padding-top: 50px;
+  height: 12vw;
+}
+.book:hover img {
+  height: 14vw;
+}
+.b_txt {
+  bottom: 40px;
+}
+.b_txt h4 {
+  font-size: 28px;
+}
+.b_txt p {
+  font-size: 16px;
+}
+.book p.price {
+  font-size: 20px;
+  font-weight: 800;
+}
+.book1 h4, .book10 h4 {
+  font-size: 50px;
+}
+.book1 p, .book10 p {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+
+/* .brand_contain */
+.brand_contain h3 {
+  margin: 120px 0 30px;
+}
+.brand_wrap {
+  display: grid;
+  row-gap: 0px; column-gap: 30px;
+  grid-template:repeat(1, 1fr)/ 1.4fr repeat(2, 1fr);
+  grid-template-areas:
+    "brand1 brand2 brand3"
+}
+
+.brand {padding: 0;}
+.brand1 {
+  grid-area: brand1;
+  background-color: #000;
+}
+.brand1 > img {
+  width: 100%;
+}
+.bd_txt > p {
+  margin: 0 0 30px 40px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 20px;
+}
+.brand_box {
+  margin-top: -100px;
+  margin-left: 40%;
+}
+.inner img {
+  width: 26%;
+}
+
+/* .nor_contain */
+.nor_contain h3 {
+  margin: 160px 0 30px;
+}
+.nor_contain > div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 68%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nor_contain div div {
+  height: 350px; width: 50%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  padding: 45px 0;
+}
+.nor_contain .restock {
+  border-bottom: 3px solid #000;
+  border-right: none;
+}
+.nor_contain div img {
+  margin: 0 auto;
+}
+.nor_contain div h5 {
+  font-size: 20px;
+  margin: 10px auto;
+}
+.nor_contain div p {
+  width: 60%;
+}
+
+
+/* footer */
+footer .f_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+}
+.f_wrap > .open {
+  width: 41%;
+}
+.f_wrap > .address {
+  width: 39%;
+}
+.f_wrap > .about {
+  width: 20%;
+}
+footer > .c_right {
+  width: 70%;
+  margin: 0 auto;
+}
+.c_txt p:nth-of-type(1),
+.c_txt p:nth-of-type(2) {
+  float: left;
+}
+.c_txt p:nth-of-type(2)::before {
+  content: "|";
+  margin: 0 8px;
+}
+.c_txt p:nth-of-type(3) {
+  clear: both;
+}
