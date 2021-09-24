@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="신다영의 상자 안 무엇이 있을까요?">
+  <meta name="title" content="신다영 포토폴리오">
+  <!-- og -->
+  <meta property="og:title" content="신다영 포토폴리오">
+  <meta property="og:url" content="http://">
+  <meta property="og:image" content="/common/images/.png">
+  <meta property="og:description" content="신다영의 상자 안 무엇이 있을까요?">
+  <meta property="type" content="website">
+
+  <title>포트폴리오 메인 화면</title>
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+
+  <!-- fonts font-family: 'Gothic A1', sans-serif; 'Jost', sans-serif;-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+
+  <!-- java Script -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+  <script src="index.js"></script>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/textillate.css">
+  <!-- 내가 작업하는 css -->
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/tablet.css" media="(max-width:1024px)">
+</head>
+
+<body>
+  <header>
+    <div class="gnb_wrap">
+    <h1><a href="/"><img src="images/box.png" alt="logo"></a></h1>
+    <ul class="gnb">
+      <li><a href="/">Home</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+
+    <div class="container">
+      <p id="box_title">in the</p>
+      <p id="box_title_box">Box</p>
+    </div>
+    <p class="portfolio">Portfolio</p>
+    <div id="header_bg"></div>
+  </header>
+
+  <main>
+    <div class="intro">
+      <div class="intro_box">
+        <p>상자 안엔 무엇이 있을까요?<br>
+           신다영이란 상자 안에는, 보는이가 원하는 컨텐츠들 뿐만아니라 무한한 상상력과 열정이 들어있습니다. </p>
+        <!-- <p>제 이름은 신다영입니다. 저는 까다로운 요소를 매력적이게 변환하여 오래 지속되는 의미 있는 웹을 만들길 희망합니다.</p> -->
+      </div>
+      </nav>
+      <img src="images/down.svg" alt="arrow_down">
+    </div>
+
+    <div class="work_wrap">
+      <div id="work" class="title_wrap">
+        <span class="line1"></span>
+        <p>What I worked</p>
+        <span class="line2"></span>
+      </div>
+
+      <div class="work p1">
+        <div class="img_space">
+          <div class="box" data-trigger></div>
+          <img src="images/iphone2.png" alt="phoneCase">
+          <div class="img_bg">
+            <video src="works/video/normal_m.mp4" autoplay controls loop muted poster="works/images/noraml_moblie.png"></video>
+          </div>
+        </div>
+        <div class="txt_space">
+          <h2 class="projectName">Normal A</h2>
+          <p class="explain">Normal A 리뉴얼 + <br>반응형 웹사이트 + <br> Json, Ajex, API 연결 프로젝트</p>
+          <p class="project_box"><a href="works/work_normalA.html">See the Project</a></p>
+        </div>
+      </div>
+
+      <div class="work p2">
+        <div class="img_space">
+          <div class="box" data-trigger></div>
+          <img src="images/iphone2.png" alt="phoneCase">
+          <div class="img_bg">
+            <video src="works/video/leneige_m.mp4" autoplay controls loop muted poster="works/images/leneige_moblie.png"></video>
+          </div>
+        </div>
+        <div class="txt_space">
+          <h2 class="projectName">Laneige</h2>
+          <p class="explain">라네즈 클론 코딩 + <br>반응형 웹사이트 구축 프로젝트</p>
+          <p class="project_box"><a href="works/work_laneige.html">See the Project</a></p>
+        </div>
+      </div>
+
+      <div class="work p3">
+        <div class="img_space">
+          <div class="box" data-trigger></div>
+          <img src="images/iphone2.png" alt="phoneCase">
+          <div class="img_bg">
+            <img src="images/ediya_img.png" alt="ediya_image">
+          </div>
+        </div>
+        <div class="txt_space">
+          <h2 class="projectName">Ediya Coffee</h2>
+          <p class="explain">이디야 커피 리뉴얼 + <br>반응형 웹사이트 구축 프로젝트</p>
+          <p class="project_box"><a href="works/work_ediya.html">See the Project</a></p>
+        </div>
+      </div>
+
+      <div class="work p4">
+        <div class="img_space">
+          <div class="box" data-trigger></div>
+          <img src="images/iphone2.png" alt="phoneCase">
+          <div class="img_bg">
+            <div class="upperBox"></div>
+            <video src="works/video/gaja_m.mp4" autoplay controls loop muted poster="works/images/gaja_main.png"></video>
+          </div>
+        </div>
+        <div class="txt_space">
+          <h2 class="projectName">가자가자</h2>
+          <p class="explain">모바일 앱 UI/UX 리뉴얼 <br>(팀 프로젝트)</p>
+          <p class="project_box"><a href="works/work_gajagaja.html">See the Project</a></p>
+        </div>
+      </div>
+
+      <div class="project_box"><a href="#">See all works</a><span></span></div>
+    </div>
+
+    <div id="about" class="title_wrap">
+      <span class="line1"></span>
+      <p>About Me</p>
+      <span class="line2"></span>
+    </div>
+
+    <div class="about">
+      <p id="about_title">About</p>
+
+      <ul class="skill">
+        <li>
+          <h2>Coding</h2>
+          <ul class="skillName">
+            <li>html5&nbsp;&nbsp;+&nbsp;&nbsp;css3</li>
+            <li>javascript(ES6+)</li>
+            <li>jQuery</li>
+            <li>Ajex&nbsp;&nbsp;+&nbsp;&nbsp; JSON</li>
+            <li>API</li>
+          </ul>
+          <ul class="detail">
+            <li>웹 접근성과 웹 표준화에 맞춰 컨텐츠 제작.</li>
+            <li>웹 페이지 디자인 구현.</li>
+            <li>반응형 웹 제작.</li>
+            <li>이벤트와 애니메이션 구현.</li>
+            <li>웹 사이트 제어.</li>
+            <li>자바스크립트로 서버의 데이터를 비동기 방식으로 교환.</li>
+            <li>Ajax로 필요한 Json 데이터만 받아 빠른 웹페이지를 구축.</li>
+            <li>표준화된 kakao API를 사용해 가벼움과 유지보수성을 높임.</li>
+          </ul>
+        </li>
+
+        <li>
+          <h2>Grapic</h2>
+          <ul class="skillName">
+            <li>illustrater</li>
+            <li>photoshop</li>
+            <li>XD</li>
+          </ul>
+          <ul class="detail">
+            <li>이미지 편집,  그래픽 요소활용 밎 다향한 효과 적용 가능.</li>
+            <li>프로토타입 제작.</li>
+            <li>웹 앱 디자인 제작. </li>
+            <li>xd를 활용한 공동 작업 공유.</li>
+          </ul>
+        </li>
+
+        <li>
+          <h2>Extra</h2>
+          <ul class="skillName">
+            <li>Git</li>
+            <li>github</li>
+            <li>cooperator</li>
+          </ul>
+          <ul class="detail">
+            <li>작업물 저장 및 확인.</li>
+            <li>코드 버전 관리.</li>
+            <li>보다 나은 개발 및 테스트 환경 구축.</li>
+            <li>협업을 통한 코트 수정 및 개선.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <div id="contact" class="title_wrap">
+      <span class="line1"></span>
+      <p>Contact</p>
+      <span class="line2"></span>
+    </div>
+  
+    <p id="email">tlsektls22@gmail.com</p>
+
+    <a href="#"><img src="images/down.svg" alt="arrow_down"></a>
+  </footer>
+
+
+    
+
+
+
+
+
+
+  
+ 
+</body>
+</html>
