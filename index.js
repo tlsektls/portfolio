@@ -108,8 +108,8 @@ const trigger = new ScrollTrigger.default({
   });
   trigger.add('[data-trigger]');
   
-  // see more work a 속성 없애기
-  $(".project_box a").removeAttr("href")
+//   // see more work a 속성 없애기
+//   $(".project_box a").removeAttr("href")
   // work 박스 누르면 이미지 띠용띠용
   $(".project_box a").click(function() {
     // $(".working img").animate({top: 'calc(50% - 200px)'}, 2000, 'easeOutElastic');
