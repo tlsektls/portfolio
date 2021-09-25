@@ -10,11 +10,11 @@ $(document).ready(function() {
   });
 
   // 모바일에서 gnb
-  if($(window).width() < 768) {
+  if($(window).width() < 1024) {
     $('.gnb_icon .menu_m').on('click',function(){
       $('.gnb_wrap').slideToggle();
     });
-  } else if($(window).width() > 768) {
+  } else if($(window).width() >= 1024) {
     $('.gnb_wrap').css({display:'block'});
   }
   // search아이콘과
