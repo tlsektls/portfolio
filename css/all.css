@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* all */
 html {padding: 0; margin: 0;}
-h1, h2, h3, p, ul, li, a, strong{padding: 0; margin: 0; font-family: 'NanumMyeongjo', Georgia, 'Times New Roman', serif;  word-break: keep-all;}
+h1, h2, h3, p, ul, li, a, strong{padding: 0; margin: 0; font-family: 'NanumMyeongjo', 'Times New Roman', serif;  word-break: keep-all;}
 ul {list-style: none;}
 li {font-family: inherit;}
 a {text-decoration: none; color: inherit; display: block;}
