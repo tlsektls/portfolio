@@ -10,13 +10,18 @@ $(document).ready(function() {
   });
 
   // 모바일에서 gnb
-  if($(window).width() < 1024) {
-    $('.gnb_icon .menu_m').on('click',function(){
-      $('.gnb_wrap').slideToggle();
-    });
-  } else if($(window).width() >= 1024) {
-    $('.gnb_wrap').css({display:'block'});
-  }
+  $(window).resize(function () {
+    if($(window).width() < 768) {
+      // 일단 사이즈가 작으면 햄버거만 보여라
+      $('.gnb_wrap').css({display:'none'});
+
+      $('.gnb_icon .menu_m').on('click',function(){
+        $('.gnb_wrap').slideToggle();
+      });
+    } else if($(window).width() >= 768) {
+      $('.gnb_wrap').css({display:'block'});
+    } 
+  });
 
   // search아이콘과
   // search를 누르면
