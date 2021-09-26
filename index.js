@@ -132,9 +132,14 @@ const trigger = new ScrollTrigger.default({
   });
 
   // 화면이 작으면 안보이게
-  if($(window).width() <= 768) {
-    $("header, main, footer").css({display: 'none'});
-    $(".inform").css({display: 'block'});
-  }
+  $(window).resize(function () {
+    if($(window).width() <= 768) {
+      $("header, main, footer").css({display: 'none'});
+      $(".inform").css({display: 'block'});
+    } else {
+      $("header, main, footer").css({display: 'block'});
+      $(".inform").css({display: 'none'});
+    }
+  });
 
 });
