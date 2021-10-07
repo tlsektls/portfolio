@@ -123,8 +123,15 @@ header .gnb_icon li img {
 .result h2 {
   font-size: 18px;
 }
-.result p {
-  width: 600px;
+.result div p {
+  width: 90%;
+}
+.result div {
+  margin-bottom: 40px;
+  width: 100%;
+}
+.result div p:last-of-type {
+  width: 70%;
 }
 
 
