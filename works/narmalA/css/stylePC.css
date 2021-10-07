@@ -12,8 +12,9 @@
   width: 40%;
   margin-bottom: 40px;
 }
-.result div p {
-  width: 100%;
+.result div p,
+.result div p:last-of-type{
+  width: 90%;
 }
 /* 검색 결과 끝 */
 
