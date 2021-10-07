@@ -16,7 +16,7 @@ $(document).ready(function() {
       $('.gnb_wrap').css({display:'none'});
 
       $('.gnb_icon .menu_m').on('click',function(){
-        $('.gnb_wrap').slideToggle();
+        $('.gnb_wrap').toggle();
       });
     } else if($(window).width() >= 1024) {
       $('.gnb_wrap').css({display:'block'});
