@@ -9,18 +9,20 @@ $(document).ready(function() {
     }
   });
 
+
   // 모바일에서 gnb
   $(window).resize(function () {
     if($(window).width() < 1024) {
       // 일단 사이즈가 작으면 햄버거만 보여라
       $('.gnb_wrap').css({display:'none'});
-
-      $('.gnb_icon .menu_m').on('click',function(){
-        $('.gnb_wrap').toggle();
-      });
+      // 모바일에서 클릭하면
     } else if($(window).width() >= 1024) {
       $('.gnb_wrap').css({display:'block'});
     } 
+  });
+
+  $('.gnb_icon .menu_m').on('click',function(){
+    $('.gnb_wrap').toggle();
   });
 
   // search아이콘과
